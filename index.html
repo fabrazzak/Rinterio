@@ -1,26 +1,153 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Rinterio</title>
+
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
+    <!-- font awesome font  -->
+    <script src="https://kit.fontawesome.com/e73bfca1fd.js" crossorigin="anonymous"></script>
+    <!-- tailwind css  -->
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
-    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- daisyUI  -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />   
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#212121',
+                        secondary:'#494949',
+                        gray:'#737373',                      
+                        
+
+                    }
+                }
+            }
+        }
+    </script>
+
+    <!-- google font css  -->
+
+    <style>
+        .manrope-primary-font {
+          font-family: "Manrope", sans-serif;
+        }
+    </style>
+    
 </head>
-<body>
+<body class="manrope-primary-font">
 
     <!-- header  -->
     <header>
-        <nav>
-            <h3>Amar sonar bangla ami tomai valobashi</h3>
+        <nav class=" container mx-auto my-6">
+            <div class="navbar bg-base-10 container0">
+                <div class="navbar-start  flex-row-reverse  w-full justify-between"> 
+                    <div class="dropdown flex justify-end w-2/4 ">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0" class="menu menu-sm dropdown-content bg-base-100 rounded-box z-[1] mt-10 w-full p-2 shadow  ">
+                            <li><a class="text-secondary   text-base ">Home</a></li>
+                            <li><a class="text-gray   text-base ">Services</a></li>
+                            <li><a class="text-gray   text-base ">Portfolio</a></li>
+                            <li><a class="text-gray   text-base ">Blogs</a></li>
+                            <li><a class="text-gray   text-base ">Contact Us</a></li>
+                        </ul>
+                    </div>
+                    <a class="font-extrabold text-primary text-2xl space-x-5"> <i class="fa fa-arrow-right bg-[#ABEF5F]   px-4 py-3 text-sm rounded-full -rotate-45" ></i> Rinterio</a>
+                </div>
+                <div class="navbar-center   hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                    <li><a class="text-secondary font-bold   text-base ">Home</a></li>
+                    <li><a class="text-gray   text-base ">Services</a></li>
+                    <li><a class="text-gray   text-base ">Portfolio</a></li>
+                    <li><a class="text-gray   text-base ">Blogs</a></li>
+                    <li><a class="text-gray   text-base ">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end  space-x-8 hidden lg:flex  ">
+                    <i class="fa fa-search text-2xl  "></i>
+                    <i class="fa fa-cart-plus text-2xl  "></i>
+                    <a class="btn bg-[#ABEF5F] text-xl font-extrabold rounded-3xl   align-middle">Book Consult <i class="fa fa-arrow-right bg-primary text-white   px-2 py-1 text-sm rounded-full -rotate-45"></i> </a>
+                </div>
+            </div>
         </nav>
+
+        <!-- banner section  -->
+
+        <div class="container mx-auto">
+            <div class="hero bg-base-10  ">
+                <div class="hero-content text-center">
+                    <div class="max-w-screen-lg mx-auto ">
+                        <img class="mx-auto" src="/assets/banner.png" alt="">
+                        <h1 class="lg:text-6xl text-3xl font-extrabold">A barn house of this design has a striking appearance</h1>
+                        <p class="py-6">
+                            The barn house captivates with its blend of rustic charm and modern sophistication, featuring weathered wood, sleek
+                            metal accents, and large windows that flood the space with natural light.
+                        </p>
+                        <button class=""><a class="btn bg-[#ABEF5F] text-xl font-extrabold rounded-3xl   align-middle">View Details <i
+                                class="fa fa-arrow-right  text-primary   px-2 py-1 text-sm rounded-full -rotate-45"></i> </a></button>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </header>
     <!-- main  -->
-     <main>
 
+     <main  class=" mx-auto container ">
+        <section class="liveable">
+            <div class="hero bg-base-200 min-h-screen">
+                <div class="hero-content flex-col lg:flex-row-reverse">
+                    <div class="text-center lg:text-left">
+                        <h1 class="text-5xl font-bold">Login now!</h1>
+                        <p class="py-6">
+                            Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
+                            quasi. In deleniti eaque aut repudiandae et a id nisi.
+                        </p>
+                    </div>
+                    <div class="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
+                        <form class="card-body">
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Email</span>
+                                </label>
+                                <input type="email" placeholder="email" class="input input-bordered" required />
+                            </div>
+                            <div class="form-control">
+                                <label class="label">
+                                    <span class="label-text">Password</span>
+                                </label>
+                                <input type="password" placeholder="password" class="input input-bordered" required />
+                                <label class="label">
+                                    <a href="#" class="label-text-alt link link-hover">Forgot password?</a>
+                                </label>
+                            </div>
+                            <div class="form-control mt-6">
+                                <button class="btn btn-primary">Login</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+        </section>
+
+
+
+
+
+<h1 class="text-white text-center  bg-black container ">amar sonar bangla</h1>
 
      </main>
      <!-- footer  -->
